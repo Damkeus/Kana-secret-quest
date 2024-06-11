@@ -9,13 +9,13 @@
 <body>
     <header>
         <div class="logo">
-            <div class="kana-vertical">kana</div>
+            <div class="kana-vertical"><img src="Kana-logo.png" class="kanalogo"></div>
         </div>
         <nav>
             <ul>
                 <li><a href="#" class="highlight">Mangas</a></li>
                 <li><a href="#">Histoires</a></li>
-                <li><a href="#">Indices?</a></li>
+                <li><a href="#" id="indices-link" onclick="togglePasswordInput()">Indices?</a></li>
                 <li><a href="#">Remerciements</a></li>
             </ul>
         </nav>
@@ -27,5 +27,9 @@
             <span class="icon-search">🔍</span>
         </div>
     </header>
+    <div id="password-container" class="password-container">
+        <input type="password" placeholder="Entrez votre mot de passe">
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

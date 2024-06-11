@@ -12,15 +12,17 @@ header {
     border-bottom: 3px solid #000000;
 }
 
+.kanalogo{
+    height: 120px;
+    width: 180px;
+}
+
 .logo {
     display: flex;
     align-items: center;
 }
 
 .kana-vertical {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    background-color: #ffeb3b;
     padding: 10px;
     font-weight: bold;
 }
@@ -42,7 +44,6 @@ nav ul li a {
     font-weight: bold;
     padding: 5px;
 }
-
 
 
 .search-container {
@@ -68,4 +69,25 @@ nav ul li a {
 .icons span {
     margin-left: 20px;
     font-size: 24px;
+}
+
+.password-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.password-container input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
