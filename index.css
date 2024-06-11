@@ -1,6 +1,10 @@
 body {
+    background-image: url('K.svg');
+    background-size: cover;
+    background-position:right;
+    background-repeat: no-repeat;
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -36,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 110px;
+    margin-right: 80px;
 }
 
 nav ul li a {
@@ -92,4 +96,11 @@ nav ul li a {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+.container{
+    display: flex;
+}
+.littlecontainer1{
+    background-color: #000000;
+    
 }
