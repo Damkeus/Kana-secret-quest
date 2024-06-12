@@ -17,9 +17,9 @@ header {
     height: 60px;
 }
 .large-image {
-    width: 120%; /* Agrandir l'image de 100% */
+    width: 140%; /* Agrandir l'image de 100% */
     position: relative;
-    right: -10%; /* Faire déborder l'image vers la droite */
+    right: -40%; /* Faire déborder l'image vers la droite */
     height: auto;
 }
 
