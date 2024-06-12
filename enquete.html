@@ -4,71 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulation d'interface iPhone</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .iphone {
-            width: 375px;
-            height: 667px;
-            background: #fff;
-            border: 16px solid black;
-            border-top-width: 60px;
-            border-bottom-width: 60px;
-            border-radius: 36px;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-        }
-        .header {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: 50px;
-            background: #000;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 18px;
-        }
-        .tabs {
-            display: flex;
-            border-bottom: 1px solid #ccc;
-        }
-        .tab {
-            flex: 1;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-            background: #eee;
-        }
-        .tab.active {
-            background: #fff;
-            border-bottom: 2px solid #000;
-        }
-        .content {
-            padding: 20px;
-            display: none;
-        }
-        .content.active {
-            display: block;
-        }
-        .camera-icon {
-            width: 100px;
-            height: 100px;
-            background: url('https://img.icons8.com/ios-filled/100/000000/camera.png') no-repeat center center;
-            background-size: cover;
-            margin: 0 auto;
-            margin-top: 150px;
-        }
-    </style>
+    <link rel="stylesheet" href="enquete.css">
 </head>
 <body>
     <div class="iphone">
@@ -84,21 +20,17 @@
         <div class="content" id="scan">
             <div class="camera-icon"></div>
         </div>
+        <div class="bottom-tabs">
+            <div class="bottom-tab" data-bottom-tab="home">
+                <img src="https://img.icons8.com/ios-filled/50/000000/home.png" alt="Accueil">
+                <span>Accueil</span>
+            </div>
+            <div class="bottom-tab active" data-bottom-tab="bottom-enquete">
+                <img src="https://img.icons8.com/ios-filled/50/000000/survey.png" alt="Enquête">
+                <span>Enquête</span>
+            </div>
+        </div>
     </div>
-
-    <script>
-        const tabs = document.querySelectorAll('.tab');
-        const contents = document.querySelectorAll('.content');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                tabs.forEach(t => t.classList.remove('active'));
-                contents.forEach(c => c.classList.remove('active'));
-
-                tab.classList.add('active');
-                document.getElementById(tab.getAttribute('data-tab')).classList.add('active');
-            });
-        });
-    </script>
+    <script src="enquete.js"></script>
 </body>
 </html>

@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.iphone {
+    width: 375px;
+    height: 667px;
+    background: #fff;
+    border: 16px solid black;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.tabs {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    background: #eee;
+}
+.tab.active {
+    background: #fff;
+    border-bottom: 2px solid #000;
+}
+.content {
+    padding: 20px;
+    display: none;
+    height: calc(100% - 160px); /* Adjusted height to fit within the iPhone frame */
+}
+.content.active {
+    display: block;
+}
+.camera-icon {
+    width: 100px;
+    height: 100px;
+    background: url('https://img.icons8.com/ios-filled/100/000000/camera.png') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.bottom-tabs {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border-top: 1px solid #ccc;
+    background: #f8f8f8;
+}
+.bottom-tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.bottom-tab img {
+    width: 24px;
+    height: 24px;
+}
+.bottom-tab span {
+    display: block;
+    font-size: 12px;
+}
+.bottom-tab.active {
+    background: #eee;
+}
+.qr-code {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+.qr-code img {
+    width: 150px;
+    height: 150px;
+}
+.qr-code p {
+    margin-top: 20px;
+    font-size: 18px;
+}
