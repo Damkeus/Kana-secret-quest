@@ -99,6 +99,9 @@ nav ul li a {
 }
 .container{
     display: flex;
+    border-color: solid red;
+    max-width: 200px;
+    max-height: 200px;
 }
 .littlecontainer1{
     background-color: #000000;

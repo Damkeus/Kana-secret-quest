@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1351.93 1084.95">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        fill: #fef585;
+        font-family: AcuminPro-Bold, 'Acumin Pro';
+        font-size: 894.36px;
+        font-weight: 700;
+        stroke: #000;
+        stroke-linecap: square;
+        stroke-linejoin: bevel;
+        stroke-width: 20px;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(216.87 837.04)"><tspan class="cls-2" x="0" y="0">3</tspan><tspan class="cls-1" x="461.48" y="0">0</tspan></text>
+  <image width="600" height="249" transform="translate(812.15 75.96) rotate(52.9) scale(1.49)" xlink:href="kana.png"/>
+</svg>
